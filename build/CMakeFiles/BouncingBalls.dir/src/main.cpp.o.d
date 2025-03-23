@@ -1,7 +1,7 @@
 CMakeFiles/BouncingBalls.dir/src/main.cpp.o: \
- /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/main.cpp \
+ /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/Ball.h \
+ /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/Ball.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
@@ -249,7 +249,7 @@ CMakeFiles/BouncingBalls.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/vector2.h \
+ /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/vector2.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \
  /usr/include/c++/13/bits/stringfwd.h /usr/include/c++/13/bits/postypes.h \

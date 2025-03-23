@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/Ball.cpp" "CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o" "gcc" "CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o.d"
-  "/home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/main.cpp" "CMakeFiles/BouncingBalls.dir/src/main.cpp.o" "gcc" "CMakeFiles/BouncingBalls.dir/src/main.cpp.o.d"
+  "/home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/Ball.cpp" "CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o" "gcc" "CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o.d"
+  "/home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/main.cpp" "CMakeFiles/BouncingBalls.dir/src/main.cpp.o" "gcc" "CMakeFiles/BouncingBalls.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

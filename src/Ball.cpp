@@ -47,11 +47,20 @@ void Ball::draw(SDL_Renderer* renderer) {
 }
 
 void Ball::handleWallCollision(int screenWidth, int screenHeight){
-    if (position.x - radius <= 0 || position.x + radius >= screenWidth){
-        velocity.x = -(velocity.x);
+    if (position.x - radius <= 0) {  // Linke Wand
+        position.x = radius;  // Ball auf den Rand setzen
+        velocity.x = -velocity.x;  // Geschwindigkeit umkehren
+    } else if (position.x + radius >= screenWidth) {  // Rechte Wand
+        position.x = screenWidth - radius;  // Ball auf den Rand setzen
+        velocity.x = -velocity.x;  // Geschwindigkeit umkehren
     }
-    if (position.y - radius <= 0 || position.y + radius >= screenHeight){
-        velocity.y = -(velocity.y);
+
+    if (position.y - radius <= 0) {  // Obere Wand
+        position.y = radius;  // Ball auf den Rand setzen
+        velocity.y = -velocity.y;  // Geschwindigkeit umkehren
+    } else if (position.y + radius >= screenHeight) {  // Untere Wand
+        position.y = screenHeight - radius;  // Ball auf den Rand setzen
+        velocity.y = -velocity.y;  // Geschwindigkeit umkehren
     }
 }
 
@@ -67,29 +76,44 @@ void Ball::checkCollision(Ball& other){
         Vector2 normal = delta / distance;
         Vector2 tang = Vector2(-(normal.y), normal.x);
 
+        double energyPre = (0.5 * this->mass * this->velocity.magnitude() * this->velocity.magnitude()) + (0.5 * other.mass * other.velocity.magnitude() * other.velocity.magnitude());
+
         double v1n = this->velocity.dot(normal);
         double v2n = other.velocity.dot(normal);
 
-        double v1t = this->velocity.dot(tang);
-        double v2t = other.velocity.dot(tang);
+        // double v1t = this->velocity.dot(tang);
+        // double v2t = other.velocity.dot(tang);
 
         //Funktion
-        double v1nnew = calcVel(v1n, v2n, this->mass, other.mass);
-        double v2nnew = calcVel(v2n, v1n, this->mass, other.mass);
+        // double v1nnew = calcVel(v1n, v2n, this->mass, other.mass);
+        // double v2nnew = calcVel(v2n, v1n, this->mass, other.mass);
 
-        Vector2 v1new = normal * v1nnew + tang * v1t;
-        Vector2 v2new = normal * v2nnew + tang * v2t;
+        // Vector2 v1new = normal * v1nnew + tang * v1t;
+        // Vector2 v2new = normal * v2nnew + tang * v2t;
+        // this->velocity = v1new;
+        // other.velocity = v2new;
 
-        this->velocity = v1new;
-        other.velocity = v2new;
+        double impulse = (2 * (v1n - v2n)) / (this->mass + other.mass);
+        this->velocity -= normal * (impulse * other.mass);
+        other.velocity += normal * (impulse * this->mass);
 
+        
+
+        double energyPost = (0.5 * this->mass * this->velocity.magnitude() * this->velocity.magnitude()) + 
+                            (0.5 * other.mass * other.velocity.magnitude() * other.velocity.magnitude());
+
+
+        if(std::pow(10, energyPost) != std::pow(10, energyPre)){
+            std::cout<< energyPost - energyPre << std::endl;
+        }
         double overlap = minDistance - distance;
         Vector2 correction = normal * (overlap / 2);
 
         this->position -= correction;
         other.position += correction;
+
     }
 }
 double Ball::calcVel(double v1, double v2, double mass1, double mass2){
-    return ((mass1 - mass2) * v1 + 2 * mass2 * v2) / (mass1 + mass2);
+    return (static_cast<double>((mass1 - mass2) * v1 + 2 * mass2 * v2)) / (mass1 + mass2);
 }

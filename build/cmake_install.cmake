@@ -1,4 +1,4 @@
-# Install script for directory: /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo
+# Install script for directory: /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

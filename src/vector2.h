@@ -30,6 +30,12 @@ class Vector2{
             return *this;
         }
 
+        Vector2& operator*=(const double& other) {
+            x *= other;
+            y *= other;
+            return *this;
+        }
+
         // Skalare Multiplikation
         Vector2 operator*(double scalar) const {
             return Vector2(x * scalar, y * scalar);

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo
+CMAKE_SOURCE_DIR = /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build
+CMAKE_BINARY_DIR = /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/BouncingBalls.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/BouncingBalls.dir/progress.make
 include CMakeFiles/BouncingBalls.dir/flags.make
 
 CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o: CMakeFiles/BouncingBalls.dir/flags.make
-CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o: /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/Ball.cpp
+CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o: /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/Ball.cpp
 CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o: CMakeFiles/BouncingBalls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o -MF CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o.d -o CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o -c /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/Ball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o -MF CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o.d -o CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o -c /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/Ball.cpp
 
 CMakeFiles/BouncingBalls.dir/src/Ball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BouncingBalls.dir/src/Ball.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/Ball.cpp > CMakeFiles/BouncingBalls.dir/src/Ball.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/Ball.cpp > CMakeFiles/BouncingBalls.dir/src/Ball.cpp.i
 
 CMakeFiles/BouncingBalls.dir/src/Ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BouncingBalls.dir/src/Ball.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/Ball.cpp -o CMakeFiles/BouncingBalls.dir/src/Ball.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/Ball.cpp -o CMakeFiles/BouncingBalls.dir/src/Ball.cpp.s
 
 CMakeFiles/BouncingBalls.dir/src/main.cpp.o: CMakeFiles/BouncingBalls.dir/flags.make
-CMakeFiles/BouncingBalls.dir/src/main.cpp.o: /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/main.cpp
+CMakeFiles/BouncingBalls.dir/src/main.cpp.o: /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/main.cpp
 CMakeFiles/BouncingBalls.dir/src/main.cpp.o: CMakeFiles/BouncingBalls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BouncingBalls.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BouncingBalls.dir/src/main.cpp.o -MF CMakeFiles/BouncingBalls.dir/src/main.cpp.o.d -o CMakeFiles/BouncingBalls.dir/src/main.cpp.o -c /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BouncingBalls.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BouncingBalls.dir/src/main.cpp.o -MF CMakeFiles/BouncingBalls.dir/src/main.cpp.o.d -o CMakeFiles/BouncingBalls.dir/src/main.cpp.o -c /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/main.cpp
 
 CMakeFiles/BouncingBalls.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BouncingBalls.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/main.cpp > CMakeFiles/BouncingBalls.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/main.cpp > CMakeFiles/BouncingBalls.dir/src/main.cpp.i
 
 CMakeFiles/BouncingBalls.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BouncingBalls.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/src/main.cpp -o CMakeFiles/BouncingBalls.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/src/main.cpp -o CMakeFiles/BouncingBalls.dir/src/main.cpp.s
 
 # Object files for target BouncingBalls
 BouncingBalls_OBJECTS = \
@@ -110,7 +110,7 @@ BouncingBalls: CMakeFiles/BouncingBalls.dir/src/main.cpp.o
 BouncingBalls: CMakeFiles/BouncingBalls.dir/build.make
 BouncingBalls: /usr/lib/x86_64-linux-gnu/libSDL2.so
 BouncingBalls: CMakeFiles/BouncingBalls.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable BouncingBalls"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable BouncingBalls"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BouncingBalls.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +122,6 @@ CMakeFiles/BouncingBalls.dir/clean:
 .PHONY : CMakeFiles/BouncingBalls.dir/clean
 
 CMakeFiles/BouncingBalls.dir/depend:
-	cd /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build /home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build/CMakeFiles/BouncingBalls.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/build /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/build /home/cheesus/Dokuments/ProgrammierProjekte/BouncingBalls/build/CMakeFiles/BouncingBalls.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/BouncingBalls.dir/depend
 

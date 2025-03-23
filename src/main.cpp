@@ -6,7 +6,7 @@
 
 const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 600;
-const int BALL_COUNT = 25;
+const int BALL_COUNT = 200;
 
 void addBall(double x, double y, double vx, double vy, int mass, SDL_Color color, std::vector<Ball>& balls){
     Vector2 pos = {x, y};
@@ -41,12 +41,9 @@ int main(int argc, char* argv[]){
     }
 
     std::vector<Ball> balls;
-    // for (int i = 0; i < BALL_COUNT; i++){
-    //     addBall(std::rand() % (SCREEN_WIDTH - 40) + 20, std::rand() % (SCREEN_HEIGHT - 40) + 20, (std::rand() % 5) + 1, (std::rand() % 5) + 1, (std::rand() % 15) + 5, {static_cast<Uint8>(std::rand() % 256), static_cast<Uint8>(std::rand() % 256), static_cast<Uint8>(std::rand() % 256), 255}, balls);
-    // }
-
-    addBall(200, 400, 1, 0, 10, {255, 0, 0, 255}, balls);
-    addBall(400, 400, 1, 0, 10, {0, 255, 0, 255}, balls);
+    for (int i = 0; i < BALL_COUNT; i++){
+        addBall(std::rand() % (SCREEN_WIDTH - 40) + 20, std::rand() % (SCREEN_HEIGHT - 40) + 20, (std::rand() % 5) + 1, (std::rand() % 5) + 1, (std::rand() % 15) + 5, {static_cast<Uint8>(std::rand() % 256), static_cast<Uint8>(std::rand() % 256), static_cast<Uint8>(std::rand() % 256), 255}, balls);
+    }
     
     
     bool running = true;
