@@ -76,36 +76,13 @@ void Ball::checkCollision(Ball& other){
         Vector2 normal = delta / distance;
         Vector2 tang = Vector2(-(normal.y), normal.x);
 
-        double energyPre = (0.5 * this->mass * this->velocity.magnitude() * this->velocity.magnitude()) + (0.5 * other.mass * other.velocity.magnitude() * other.velocity.magnitude());
-
         double v1n = this->velocity.dot(normal);
         double v2n = other.velocity.dot(normal);
-
-        // double v1t = this->velocity.dot(tang);
-        // double v2t = other.velocity.dot(tang);
-
-        //Funktion
-        // double v1nnew = calcVel(v1n, v2n, this->mass, other.mass);
-        // double v2nnew = calcVel(v2n, v1n, this->mass, other.mass);
-
-        // Vector2 v1new = normal * v1nnew + tang * v1t;
-        // Vector2 v2new = normal * v2nnew + tang * v2t;
-        // this->velocity = v1new;
-        // other.velocity = v2new;
 
         double impulse = (2 * (v1n - v2n)) / (this->mass + other.mass);
         this->velocity -= normal * (impulse * other.mass);
         other.velocity += normal * (impulse * this->mass);
 
-        
-
-        double energyPost = (0.5 * this->mass * this->velocity.magnitude() * this->velocity.magnitude()) + 
-                            (0.5 * other.mass * other.velocity.magnitude() * other.velocity.magnitude());
-
-
-        if(std::pow(10, energyPost) != std::pow(10, energyPre)){
-            std::cout<< energyPost - energyPre << std::endl;
-        }
         double overlap = minDistance - distance;
         Vector2 correction = normal * (overlap / 2);
 
