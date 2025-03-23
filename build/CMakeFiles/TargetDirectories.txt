@@ -1,0 +1,3 @@
+/home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build/CMakeFiles/BouncingBalls.dir
+/home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build/CMakeFiles/edit_cache.dir
+/home/cheesus/Studium/Semester5/Computergrafik/baelleDemo/build/CMakeFiles/rebuild_cache.dir

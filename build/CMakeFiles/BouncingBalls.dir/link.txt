@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/BouncingBalls.dir/src/Ball.cpp.o CMakeFiles/BouncingBalls.dir/src/main.cpp.o -o BouncingBalls  /usr/lib/x86_64-linux-gnu/libSDL2.so 
